@@ -13,7 +13,7 @@ const TextLinkButton: React.FC<ButtonProps> = ({
   className,
 }) => {
   return (
-    <Link className={`font-bold flex items-center${className}`} href={url}>
+    <Link className={`font-bold flex items-center ${className}`} href={url}>
       <p className="m-0 text-orange-500">{linkText}</p> &nbsp;{" "}
       <FaLongArrowAltRight className="text-orange-500" />
     </Link>
