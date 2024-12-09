@@ -1,5 +1,9 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import ServiceCard from "../../components/ServiceCard";
+import MailButton from "../../components/ContactButton";
+import TextLinkButton from "../../components/TextLinkButton";
+import TextComponent from "../../components/OrangeText";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,102 +18,187 @@ const geistMono = localFont({
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/pages/index.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="">
+      <section className="bg-hero-background text-center text-white">
+        <div className="py-20">
+          <h1>Bygg drømmehjemmet med oss</h1>
+          <p className="my-8">Profesjonelt byggefirma med fokus på kvalitet</p>
+          <MailButton
+            className="bg-orange-500 px-10 my-6 py-6"
+            email="example@example.com"
+            text="Kontakt oss"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </section>
+      <section className="py-8 px-4 flex flex-col lg:flex-row items-center gap-8">
+        <div>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/suitman.png"
+            width={500}
+            height={500}
+            alt="Picture of the author"
+            className="m-0"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+        </div>
+        <div>
+          <h2>Les mer om Tysvær Bygg AS</h2>
+          <p>
+            Tysvær Bygg AS er et etablert byggefirma i Tysvær med ekspertise
+            innen bolig- og næringsbygg. Vi leverer skreddersydde løsninger for
+            ethvert prosjekt.
+          </p>
+          <p>
+            selskapet ble grunnlagt i 2010 av erfarne håndverkere som ønsklet å
+            tilby høy kvalitet og ålitelighet til lokalsamfunnet. Siden den gang
+            har vi bygget et solid rykte.
+          </p>
+          <TextLinkButton
+            className="text-orange-500"
+            linkText="Les mer"
+            url="/"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+        </div>
+      </section>
+      <section className="py-8 px-4 grid bg-gray-200 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <h2 className="col-span-full text-center text-2xl font-bold">
+          Våre tjenester og løsninger
+        </h2>
+        <p className="col-span-full text-center mb-4">
+          Utforsk vårt utvalg av bygg- og rehabiliteringstjenester skreddersydd
+          for dine behov.
+        </p>
+        <div className="">
+          <ServiceCard
+            title="Rehablitering av bygninger"
+            price="Fra 12.000 NOK/m²"
+            url="/"
+            linkText="Lær mer"
+            imageSrc="/outsidehome.png"
+            altText="Modern apartment exterior"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+        <ServiceCard
+          title="Komersielle prosjekter"
+          price="Tilpasses etter forespørsel"
+          url="/"
+          linkText="Lær mer"
+          imageSrc="/outsidehome.png"
+          altText="Modern apartment exterior"
+        />
+        <ServiceCard
+          title="Nybygg av boliger"
+          price="Fra 15.000 NOK/m²"
+          url="/"
+          linkText="Lær mer"
+          imageSrc="/outsidehome.png"
+          altText="Modern apartment exterior"
+        />
+        <ServiceCard
+          title="Tilbygg og ombygginger"
+          price="Fra 10.000 NOK/m²"
+          url="/"
+          linkText="Lær mer"
+          imageSrc="/outsidehome.png"
+          altText="Modern apartment exterior"
+        />
+      </section>
+      <section className="px-4 bg-gray-200 border-t py-6 border-gray-300 text-center">
+        <h2>Er du klar til å starte prosjektet?</h2>
+        <MailButton email="example@example.com" text="Kontakt oss" />
+      </section>
+      <section className="bg-black text-white px-4">
+        <h2>Gratis konsulatjon om byggprosjekter</h2>
+        <p>
+          Vi tilbyr en gratis konusltasjon for å diskutere dine byggebehov og
+          hvordan vi kan hjelpe deg.
+        </p>
+        <div>
+          <h3>Nybygg</h3>
+          <p>Skreddersydde nybygg for boliger og næringsbygg.</p>
+        </div>
+        <div>
+          <h3>Rehablitering</h3>
+          <p>
+            Rehabliteringstjenester for eksiterende bygninger med fokus på
+            kjvalitet
+          </p>
+        </div>
+        <div>
+          <h3>Tilbygg</h3>
+          <p>Tilbygg som gir deg extra plass og funksjonalitet.</p>
+        </div>
+        <div>
+          <h3>Prosjektledelse</h3>
+          <p>
+            Vi tilbyr prosesjonell prosjektledelse for å sikre suksess i ditt
+            byggeprosjekt.
+          </p>
+        </div>
+      </section>
+      <section className="px-4 bg-gray-200">
+        <h2>Vår enkle prosess</h2>
+        <p>
+          Vi følger strukturert prosess for å sikre att ditt byggprosjekt
+          gjennomføres på en effektiv måte.
+        </p>
+        <div>
+          <TextComponent>01</TextComponent>
+          <h3>Konsultasjon</h3>
+          <p>
+            Vi starter med en konsultasjion for å forstå dine behov og ønsker
+            for prosjektet.
+          </p>
+        </div>
+        <div>
+          <TextComponent>02</TextComponent>
+          <h3>Planlegging</h3>
+          <p>
+            Vi lager en detaljert plan med tidslinje og kostnadoverslag for
+            prosjektet.
+          </p>
+        </div>
+        <div>
+          <TextComponent>03</TextComponent>
+          <h3>Utførelse</h3>
+          <p>
+            Etter godkjenning begynner vi arbeidet med høy kvbalitet of
+            presisjon.
+          </p>
+        </div>
+      </section>
+      <section className="px-4">
+        <div className="text-center">
+          <h2>Kundeuttalelser</h2>
+          <p>Hva våre kunder sier om oss</p>
+        </div>
+        <div>
+          <p>
+            Tysvær Bygg AS leverte et fantastisk resultat på vårt nybygg. De var
+            profesjonelle, punktlige og veldig hjelopsomme gjennom hele
+            prosessen!
+          </p>
+          <div>
+            <p>Ola Hansen</p>
+          </div>
+        </div>
+        <div>
+          <p>
+            Vi er veldig fornøyd med rehabiliteringen av vår eldre bolig. Tysvær
+            Bygg AS gjorde en utmerket jobb og overgikk våre forventinger.
+          </p>
+          <div>
+            <p>Kari Nilsen</p>
+          </div>
+        </div>
+      </section>
+      <section className=" py-8 text-center bg-hero-background text-white">
+        <h2>Ta kontakt idag for en gratis byggekonsultasjon!</h2>
+        <MailButton email="example@example.com" text="Kontakt oss" />{" "}
+        <p className="text-3xl">eller</p>
+        <p className="text-3xl">
+          Ring: <a href="tel:+4740303053">40303053</a>
+        </p>
+      </section>
+    </main>
   );
 }
