@@ -116,18 +116,18 @@ export default function Home() {
           <h3>Nybygg</h3>
           <p>Skreddersydde nybygg for boliger og næringsbygg.</p>
         </div>
-        <div>
+        <div className="border-t border-gray-300">
           <h3>Rehablitering</h3>
           <p>
             Rehabliteringstjenester for eksiterende bygninger med fokus på
             kjvalitet
           </p>
         </div>
-        <div>
+        <div className="border-t border-gray-300">
           <h3>Tilbygg</h3>
           <p>Tilbygg som gir deg extra plass og funksjonalitet.</p>
         </div>
-        <div>
+        <div className="border-t border-gray-300">
           <h3>Prosjektledelse</h3>
           <p>
             Vi tilbyr prosesjonell prosjektledelse for å sikre suksess i ditt
@@ -141,7 +141,7 @@ export default function Home() {
           Vi følger strukturert prosess for å sikre att ditt byggprosjekt
           gjennomføres på en effektiv måte.
         </p>
-        <div>
+        <div className="border-t border-gray-300">
           <TextComponent>01</TextComponent>
           <h3>Konsultasjon</h3>
           <p>
