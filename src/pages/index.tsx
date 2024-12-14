@@ -1,9 +1,9 @@
 import Image from "next/image";
 // import localFont from "next/font/local";
-import ServiceCard from "../../components/ServiceCard";
-import MailButton from "../../components/ContactButton";
-import TextLinkButton from "../../components/TextLinkButton";
-import TextComponent from "../../components/OrangeText";
+import ServiceCard from "../components/ServiceCard";
+import MailButton from "../components/ContactButton";
+import TextLinkButton from "../components/TextLinkButton";
+import TextComponent from "../components/OrangeText";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
