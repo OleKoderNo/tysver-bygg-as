@@ -42,8 +42,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/dette-er-et-eksempel" className="hover:text-gray-600">
-              Dette er et eksempel
+            <Link href="/vare-tjenester" className="hover:text-gray-600">
+              Våre tjenester
             </Link>
           </li>
         </ul>
@@ -72,11 +72,11 @@ const Navbar = () => {
           </li>
           <li className="py-2 px-4">
             <Link
-              href="/dette-er-et-eksempel"
+              href="/vare-tjenester"
               className="block hover:text-gray-600"
               onClick={() => setMenuOpen(false)}
             >
-              Dette er et eksempel
+              Våre tjenester
             </Link>
           </li>
         </ul>

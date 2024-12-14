@@ -32,34 +32,62 @@ const OmOss: NextPage = () => {
               og vi er stolte av å tilby et bredt spekter av tjenester som
               oppfyller dine unike behov og ønsker.
             </p>
+            <p className="text-lg leading-relaxed text-gray-700 mt-4">
+              Vårt engasjerte team av dyktige håndverkere og tømrere har solid
+              kompetanse og erfaring innen byggebransjen. Vi bruker moderne
+              byggemetoder og kvalitetsmaterialer for å sikre at hvert prosjekt
+              vi tar på oss, utføres til høyeste standard. Vår dedikasjon til
+              høy kvalitet og personlig service betyr at vi alltid setter kunden
+              i fokus, og vi streber etter å overgå dine forventninger i alle
+              ledd av prosessen.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-700 mt-4">
+              Hos Tysvær Bygg AS forstår vi at hvert byggeprosjekt er unikt.
+              Derfor tilbyr vi skreddersydde løsninger, enten du planlegger å
+              bygge en ny bolig, pusse opp kjøkkenet, eller renovere et eldre
+              bygg for å gi det nytt liv. Vi håndterer alt fra mindre
+              oppussingsoppdrag til komplette nybygg, og vi jobber tett med deg
+              for å sikre at resultatet blir akkurat slik du har drømt om.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-700 mt-4">
+              Vi betjener kunder i hele Tysvær, samt i nærliggende områder som
+              Haugesund, Karmøy og resten av Rogaland. Som et lokalt tømrerfirma
+              har vi inngående kjennskap til lokale byggeregler og standarder,
+              noe som sikrer en smidig og effektiv byggeprosess uten uforutsette
+              hindringer.
+            </p>
           </div>
         </section>
 
         <section className="py-8 px-4 bg-gray-200">
-          <h2 className="text-2xl font-bold text-center mb-6">Hva vi tilbyr</h2>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold">Dyktige håndverkere</h3>
-              <p className="text-gray-700 mt-2">
-                Vårt engasjerte team av dyktige håndverkere og tømrere har solid
-                kompetanse og erfaring innen byggebransjen.
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold ">
-                Skreddersydde løsninger
-              </h3>
-              <p className="text-gray-700 mt-2">
-                Vi tilbyr skreddersydde løsninger for å sikre at hvert prosjekt
-                oppfyller dine unike behov.
-              </p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold ">Lokalkunnskap</h3>
-              <p className="text-gray-700 mt-2">
-                Som et lokalt tømrerfirma har vi inngående kjennskap til lokale
-                byggeregler og standarder.
-              </p>
+          <div className="md:w-11/12 lg:w-3/4 md:mx-auto">
+            <h2 className="text-2xl font-bold text-center mb-6">
+              Hva vi tilbyr
+            </h2>
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-xl font-semibold">Dyktige håndverkere</h3>
+                <p className="text-gray-700 mt-2">
+                  Vårt engasjerte team av dyktige håndverkere og tømrere har
+                  solid kompetanse og erfaring innen byggebransjen.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-xl font-semibold ">
+                  Skreddersydde løsninger
+                </h3>
+                <p className="text-gray-700 mt-2">
+                  Vi tilbyr skreddersydde løsninger for å sikre at hvert
+                  prosjekt oppfyller dine unike behov.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-xl font-semibold ">Lokalkunnskap</h3>
+                <p className="text-gray-700 mt-2">
+                  Som et lokalt tømrerfirma har vi inngående kjennskap til
+                  lokale byggeregler og standarder.
+                </p>
+              </div>
             </div>
           </div>
         </section>
