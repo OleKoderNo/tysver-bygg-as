@@ -60,7 +60,7 @@ export default function Home() {
             <TextLinkButton
               className="text-orange-500"
               linkText="Les mer"
-              url="/"
+              url="/om-oss"
             />
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Home() {
             <ServiceCard
               title="Rehablitering av bygninger"
               price="Fra 12.000 NOK/m²"
-              url="/"
+              url="/vare-tjenester"
               linkText="Lær mer"
               imageSrc="/outsidehome.png"
               altText="Modern apartment exterior"
@@ -87,7 +87,7 @@ export default function Home() {
           <ServiceCard
             title="Komersielle prosjekter"
             price="Tilpasses etter forespørsel"
-            url="/"
+            url="/vare-tjenester"
             linkText="Lær mer"
             imageSrc="/outsidehome.png"
             altText="Modern apartment exterior"
@@ -95,7 +95,7 @@ export default function Home() {
           <ServiceCard
             title="Nybygg av boliger"
             price="Fra 15.000 NOK/m²"
-            url="/"
+            url="/vare-tjenester"
             linkText="Lær mer"
             imageSrc="/outsidehome.png"
             altText="Modern apartment exterior"
@@ -103,7 +103,7 @@ export default function Home() {
           <ServiceCard
             title="Tilbygg og ombygginger"
             price="Fra 10.000 NOK/m²"
-            url="/"
+            url="/vare-tjenester"
             linkText="Lær mer"
             imageSrc="/outsidehome.png"
             altText="Modern apartment exterior"
